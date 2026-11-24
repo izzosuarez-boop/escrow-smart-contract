@@ -1,5 +1,16 @@
 # Non-custodial escrow — design testbed with measured on-chain costs
 
+**Portfolio:** [ivanboot.dev](https://ivanboot.dev) · see it in [Web & API Integration](https://ivanboot.dev/web-api)
+
+At the core of every trade on KamasMarket, a smart contract written in Solidity on BNB Chain: the payment is verified
+on the blockchain, and the contract pays the seller or refunds the buyer as the backend reports, with no third
+option.
+
+Each order has its own smart contract. The buyer's money can only end up in two places: with the seller, once the
+delivery is confirmed, or back with the buyer if the order falls through. No one, not even the platform, can divert
+it. When the delivery is confirmed, the contract pays the seller and sends the commission to its wallet, for a few
+cents per order.
+
 A Solidity testbed built to answer one question for a production marketplace,
 **with measured numbers instead of intuition**: *what does each on-chain escrow
 design actually cost per order, and is it worth it?*
