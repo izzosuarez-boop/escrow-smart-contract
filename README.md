@@ -1,7 +1,5 @@
 # Non-custodial escrow — design testbed with measured on-chain costs
 
-**Portfolio:** [ivanboot.dev](https://ivanboot.dev) · see it in [Web & API Integration](https://ivanboot.dev/web-api)
-
 At the core of every trade on KamasMarket, a smart contract written in Solidity on BNB Chain: the payment is verified
 on the blockchain, and the contract pays the seller or refunds the buyer as the backend reports, with no third
 option.
@@ -21,7 +19,6 @@ A constraint set by legal counsel, encoded as a contract invariant rather than
 a policy document: **a buyer's money can only end up at the seller or back at
 the buyer.** The platform fee goes to a wallet fixed at deployment. There is no
 general withdrawal function — not even for the contract operator.
-
 
 ## Measured results
 
